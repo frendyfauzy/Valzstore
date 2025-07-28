@@ -72,7 +72,7 @@
     }
 
     .card ul li::before {
-      content: "✔️";
+      content: "\2714";
       margin-right: 8px;
       color: #00ffcc;
     }
@@ -103,9 +103,25 @@
     .card.blue h2 { color: #3399ff; }
     .card.orange h2 { color: orange; }
 
-    @media(max-width: 500px) {
+    @media(max-width: 768px) {
       .title h1 {
         font-size: 28px;
+      }
+      section {
+        padding: 20px;
+      }
+    }
+
+    @media(max-width: 480px) {
+      .title h1 {
+        font-size: 24px;
+      }
+      .harga, .harga-normal {
+        font-size: 16px;
+      }
+      .tombol {
+        font-size: 14px;
+        padding: 6px 12px;
       }
     }
   </style>
