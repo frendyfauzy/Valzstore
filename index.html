@@ -39,7 +39,7 @@
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
       max-width: 1200px;
-      margin: auto;
+      margin: 40px auto;
     }
 
     .card {
@@ -72,7 +72,7 @@
     }
 
     .card ul li::before {
-      content: "\2714";
+      content: "✔️";
       margin-right: 8px;
       color: #00ffcc;
     }
@@ -103,25 +103,22 @@
     .card.blue h2 { color: #3399ff; }
     .card.orange h2 { color: orange; }
 
-    @media(max-width: 768px) {
+    @media (max-width: 500px) {
       .title h1 {
         font-size: 28px;
       }
-      section {
-        padding: 20px;
-      }
     }
 
-    @media(max-width: 480px) {
-      .title h1 {
-        font-size: 24px;
+    @media (max-width: 768px) {
+      .product-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
-      .harga, .harga-normal {
-        font-size: 16px;
-      }
-      .tombol {
-        font-size: 14px;
-        padding: 6px 12px;
+
+      .card {
+        width: 90%;
+        max-width: 100%;
       }
     }
   </style>
@@ -132,27 +129,23 @@
       <h1>SAMP Ryzen 9 By Valzstore</h1>
       <p>Paket Hosting SA-MP Terbaik</p>
     </div>
-    
+
+    <!-- Section Promo -->
     <section style="max-width: 900px; margin: 60px auto; padding: 40px; background: rgba(10, 10, 20, 0.85); border: 2px solid rgba(255, 165, 0, 0.15); border-radius: 16px; backdrop-filter: blur(12px); color: #f1f1f1; font-family: 'Segoe UI', sans-serif; box-shadow: 0 0 20px rgba(255, 165, 0, 0.1); text-align: center;">
       <img src="https://i.postimg.cc/qRNpTn48/ryzen.png" alt="AMD Ryzen 9 Logo" style="width: 110px; opacity: 0.95; margin-bottom: 20px;">
-      
       <h2 style="font-size: 30px; color: #ffa726; margin-bottom: 10px;">Performa Tinggi Berbasis AMD Ryzen 9</h2>
       <p style="font-size: 18px; color: #ddd; max-width: 800px; margin: 0 auto 20px;">
         Semua layanan server di <strong>valzstore</strong> dibangun menggunakan prosesor <strong style="color:#ffcc80;">AMD Ryzen 9</strong> — pilihan terbaik untuk performa maksimal dalam game dan hosting berat. 
       </p>
-    
       <p style="font-size: 17px; color: #bbb; max-width: 820px; margin: 15px auto;">
         Dengan kekuatan <strong>multi-core tinggi</strong> dan clock speed ekstrem, Ryzen 9 sanggup menangani beban berat dari sistem roleplay, plugin intensif, dan hingga 100+ pemain tanpa kompromi.
       </p>
-    
       <p style="font-size: 17px; color: #bbb; max-width: 820px; margin: 15px auto;">
         Semua paket kami — mulai dari <strong style="color: #4fc3f7;">Budget</strong> hingga <strong style="color: #4fc3f7;">Dedicated</strong> — telah teruji untuk kecepatan, stabilitas, dan kelengkapan fitur: <strong>unlimited RAM</strong>, <strong>voice ready</strong>, <strong>plugin lengkap</strong>, hingga <strong>anti-DDOS core</strong>.
       </p>
-    
       <p style="font-size: 17px; color: #bbb; max-width: 820px; margin: 15px auto;">
         Lokasi server di <strong>Singapore</strong> memastikan <strong>latency rendah</strong> untuk semua pemain Indonesia — cocok untuk komunitas roleplay yang ingin tampil kompetitif dan profesional.
       </p>
-    
       <p style="font-size: 20px; color: #ffa726; font-weight: bold; margin-top: 30px;">
         valzstore — Karena performa adalah hal yang utama.
       </p>
@@ -235,7 +228,6 @@
         <div class="harga-normal">Rp 200.000/Bulan</div>
         <a href="https://discord.gg/X7za2wVXHP" class="tombol">Beli Sekarang</a>
       </div>
-      <div class="product-container">
 
       <div class="card red">
         <h2>SAMP Windows #1</h2>
@@ -312,7 +304,6 @@
         <div class="harga-normal">Rp 220.000/Bulan</div>
         <a href="https://discord.gg/X7za2wVXHP" class="tombol">Beli Sekarang</a>
       </div>
-      <div class="product-container">
 
       <div class="card red">
         <h2>SAMP Cloud #1</h2>
@@ -389,7 +380,6 @@
         <div class="harga-normal">Rp 550.000/Bulan</div>
         <a href="https://discord.gg/X7za2wVXHP" class="tombol">Beli Sekarang</a>
       </div>
-      <div class="product-container">
 
       <div class="card red">
         <h2>SAMP Dedicated #1</h2>
